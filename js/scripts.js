@@ -17,6 +17,7 @@ $(document).ready(function() {
                 $('.location').slideDown();
             } else {
                 $('.bad').slideDown();
+                $('.btn-primary').hide();
             }
         } else if(nextCount === 2) {
             location = $("input:radio[name=location]:checked").val();
