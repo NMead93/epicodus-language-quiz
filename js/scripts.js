@@ -33,4 +33,43 @@ $(document).ready(function() {
         nextCount++;
     });
 
+    $('form').submit(function (event) {
+        console.log('test')
+        event.preventDefault();
+        date = $("input:radio[name=date]:checked").val();
+        $('.trackRes').show();
+        $('.btn-success').hide();
+        $('.date').hide();
+        $('.locationAns').text(location);
+
+        if (location === "Seattle") {
+
+            if (size === "Established") {
+                $('.trackAns').text("Php");
+                $('.dateAns').text("February");
+            } else {
+                $('.trackAns').text('Ruby');
+                $('.dateAns').text('March');
+            }
+        } else {
+            $('.locationAns').text(location);
+            if (dev === 'Design') {
+                $('.trackAns').text('CSS/Design');
+                $('.dateAns').text('April');
+            } else if (dev === 'Mobile') {
+                $('.trackAns').text('Java/Android');
+                $('.dateAns').text('February');
+            } else {
+                if (size === 'Established') {
+                    $('.trackAns').text('C#/.Net');
+                    $('.dateAns').text('april')
+                } else {
+                    $('.trackAns').text('Ruby');
+                    $('.dateAns').text('March')
+                }
+            }
+        }
+
+
+    });
 });
