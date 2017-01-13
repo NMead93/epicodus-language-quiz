@@ -3,7 +3,11 @@
 
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js">
+
+    </script>
 
     <meta charset="utf-8">
     <title>Epicodus Tracks</title>
@@ -28,9 +32,9 @@
                     </div>
 
                     <div class="pair">
-                        <p>Can you program with others or are you solo only?</p>
+                        <p>Are you willing to program with others?</p>
                         <div class="radio">
-                            <label><input type="radio" name="optradio">Work well with others</label>
+                            <label><input type="radio" name="optradio">Yes</label>
                         </div>
                         <div class="radio">
                             <label><input type="radio" name="optradio">Ew, I hate people</label>
@@ -83,7 +87,19 @@
                         </div>
                     </div>
 
+                    <button type="button" class="btn btn-primary">Next</button>
+                    <button type="submit" class="btn btn-success">Submit!</button>
                 </form>
+
+                <div class="answers">
+                    <div class="bad">
+                        <p>You should reconsider applying for Epicodus. They incorporate a pair programming learning model and a large part of their curriculum is developing the ability to communicate and program with other developers.</p>
+                    </div>
+
+                    <div class="trackRes">
+                        <p>We suggest the <span class="trackAns"></span> track in <span class="locationAns"></span> that starts in <span class="dateAns"></span>.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
