@@ -1,7 +1,11 @@
-.pair, .location, .dev, .size, .date, .bad, .trackRes, .btn-success {
+.pair, .location, .dev, .size, .date, .bad, .trackRes, .btn-success, .btn-info {
     display: none;
 }
 
 .trackRes h2, .bad h3 {
     text-align: center;
+}
+
+.btn-info {
+    margin: auto;
 }

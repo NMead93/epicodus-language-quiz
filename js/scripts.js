@@ -72,6 +72,18 @@ $(document).ready(function() {
             }
         }
 
-
+        $('.btn-info').show();
     });
+
+    $('.btn-info').click(function () {
+        nexcount = 0;
+        pair = 0
+        location = 0
+        dev = 0
+        size = 0
+        date = 0
+
+        ('.btn-info').hide();
+        ('.btn-primary').show();
+    })
 });
