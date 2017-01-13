@@ -7,9 +7,10 @@ $(document).ready(function() {
     var date;
 
     $('.btn-primary').click(function() {
-        $('.initial, .pair, .location, .dev, .size, .date').hide();
+        $('.pair, .location, .dev, .size, .date').hide();
         if (nextCount === 0) {
             $('.pair').show();
+            $('.btn-primary').text("Next");
         } else if (nextCount === 1) {
             pair = $("input:radio[name=pair]:checked").val();
             if (pair === "Yes") {
