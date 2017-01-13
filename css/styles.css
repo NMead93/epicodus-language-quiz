@@ -1,3 +1,7 @@
 .pair, .location, .dev, .size, .date, .bad, .trackRes, .btn-success {
     display: none;
 }
+
+.trackRes p {
+    text-align: center;
+}

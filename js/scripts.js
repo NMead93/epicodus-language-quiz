@@ -9,24 +9,24 @@ $(document).ready(function() {
     $('.btn-primary').click(function() {
         $('.pair, .location, .dev, .size, .date').hide();
         if (nextCount === 0) {
-            $('.pair').show();
+            $('.pair').slideDown();
             $('.btn-primary').text("Next");
         } else if (nextCount === 1) {
             pair = $("input:radio[name=pair]:checked").val();
             if (pair === "Yes") {
-                $('.location').show();
+                $('.location').slideDown();
             } else {
-                $('.bad').show();
+                $('.bad').slideDown();
             }
         } else if(nextCount === 2) {
             location = $("input:radio[name=location]:checked").val();
-            $('.dev').show();
+            $('.dev').slideDown();
         } else if (nextCount === 3) {
             dev = $("input:radio[name=dev]:checked").val();
-            $('.size').show();
+            $('.size').slideDown();
         } else {
             size = $("input:radio[name=size]:checked").val();
-            $('.date').show();
+            $('.date').slideDown();
             $('.btn-primary').hide();
             $('.btn-success').show();
         }
