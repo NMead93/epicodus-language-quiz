@@ -36,7 +36,6 @@ $(document).ready(function() {
     });
 
     $('form').submit(function (event) {
-        console.log('test')
         event.preventDefault();
         date = $("input:radio[name=date]:checked").val();
         $('.trackRes').show();
@@ -72,18 +71,19 @@ $(document).ready(function() {
             }
         }
 
-        $('.btn-info').show();
+        $('.homeBtn').show();
     });
 
     $('.btn-info').click(function () {
-        nexcount = 0;
+        nextCount = 0;
         pair = 0
         location = 0
         dev = 0
         size = 0
         date = 0
 
-        ('.btn-info').hide();
-        ('.btn-primary').show();
+        $('.homeBtn, .trackRes').hide();
+        $('.btn-primary').show().text("Click Here to Begin!");
+
     })
 });

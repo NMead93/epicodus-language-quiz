@@ -1,4 +1,4 @@
-.pair, .location, .dev, .size, .date, .bad, .trackRes, .btn-success, .btn-info {
+.pair, .location, .dev, .size, .date, .bad, .trackRes, .btn-success, .homeBtn {
     display: none;
 }
 
@@ -6,6 +6,6 @@
     text-align: center;
 }
 
-.btn-info {
+.homeBtn {
     margin: auto;
 }
