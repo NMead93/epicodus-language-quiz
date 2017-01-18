@@ -1,11 +1,20 @@
-$(document).ready(function() {
-    var nextCount = 0;
-    var pair;
-    var location;
-    var dev;
-    var size;
-    var date;
+var nextCount = 0;
+var pair;
+var location;
+var dev;
+var size;
+var date;
 
+function reset(){
+  nextCount = 0;
+  pair = 0;
+  location = 0;
+  dev = 0;
+  size = 0;
+  date = 0;
+}
+
+$(document).ready(function() {
     $('.btn-primary').click(function() {
         $('.pair, .location, .dev, .size, .date').hide();
         if (nextCount === 0) {
@@ -75,12 +84,6 @@ $(document).ready(function() {
     });
 
     $('.btn-info').click(function () {
-        nextCount = 0;
-        pair = 0
-        location = 0
-        dev = 0
-        size = 0
-        date = 0
 
         $('.homeBtn, .trackRes').hide();
         $('.btn-primary').show().text("Click Here to Begin!");
